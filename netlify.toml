@@ -5,6 +5,6 @@
 # “command” is your build command
 
 [build]
-  base    = "brandonmbanks.com"
+  base    = ""
   publish = "dist"
   command = "npm run-script build"
