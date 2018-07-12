@@ -8,3 +8,4 @@
   base    = ""
   publish = "dist"
   command = "npm run-script build"
+  
