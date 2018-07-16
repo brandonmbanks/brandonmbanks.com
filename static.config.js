@@ -10,21 +10,21 @@ export default {
     return [
       {
         path: '/',
-        component: 'src/containers/Home',
+        component: 'src/components/Home',
       },
       {
         path: '/about',
-        component: 'src/containers/About',
+        component: 'src/components/About',
       },
       {
         path: '/blog',
-        component: 'src/containers/Blog',
+        component: 'src/components/Blog',
         getData: () => ({
           posts,
         }),
         children: posts.map(post => ({
           path: `/post/${post.id}`,
-          component: 'src/containers/Post',
+          component: 'src/components/Post',
           getData: () => ({
             post,
           }),
@@ -32,7 +32,7 @@ export default {
       },
       {
         is404: true,
-        component: 'src/containers/404',
+        component: 'src/components/404',
       },
     ]
   },
